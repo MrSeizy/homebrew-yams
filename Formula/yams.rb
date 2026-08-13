@@ -1,7 +1,7 @@
 class Yams < Formula
   desc "Offline semantic memory search for coding-agent corpora"
   homepage "https://github.com/PonchoPig/yams"
-  url "https://github.com/PonchoPig/yams/releases/download/v0.1.0/yams-0.1.0-aarch64-apple-darwin.tar.gz"
+  url "file://#{Dir.home}/dev/yams/dist/yams-0.1.0-aarch64-apple-darwin.tar.gz"
   sha256 "b1dda1c0a743e20a7ddfb64e2257f169f5f927b6b1b8cadc15aff3d728c281d9"
   license any_of: ["Apache-2.0", "MIT"]
 

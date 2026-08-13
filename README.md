@@ -23,14 +23,10 @@ brew "ponchopig/yams/yams"
 `brew tap ponchopig/yams` without a clone URL only works once GitHub
 credentials can fetch `https://github.com/PonchoPig/homebrew-yams`.
 
-Until the first Yams GitHub release exists, `brew install yams` cannot
-download the formula URL. Install from a local gate-built tarball instead:
-
-```sh
-# temporarily point Formula/yams.rb url at
-# file://$HOME/dev/yams/dist/yams-0.1.0-aarch64-apple-darwin.tar.gz
-brew install --formula ponchopig/yams/yams
-```
+The formula currently installs from the local gate-built tarball at
+`~/dev/yams/dist/yams-0.1.0-aarch64-apple-darwin.tar.gz`. After the first
+GitHub release exists, replace that `file://` URL with the published
+tarball URL and its sha256.
 
 ## Documentation
 
