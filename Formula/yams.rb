@@ -2,7 +2,7 @@ class Yams < Formula
   desc "Offline semantic memory search for coding-agent corpora"
   homepage "https://github.com/PonchoPig/yams"
   url "file://#{Dir.home}/dev/yams/dist/yams-0.1.0-aarch64-apple-darwin.tar.gz"
-  sha256 "b1dda1c0a743e20a7ddfb64e2257f169f5f927b6b1b8cadc15aff3d728c281d9"
+  sha256 "b1d6bda69181ba4d20ace98c3d08b4ba7a66341455f83fca445906304d3c9ff5"
   license any_of: ["Apache-2.0", "MIT"]
 
   depends_on arch: :arm64
@@ -24,7 +24,7 @@ class Yams < Formula
       First run downloads the embedding model (~550 MB) into
       ~/Library/Caches/yams. Inside a project that already contains
       .agents/memory, run:
-        YAMS_ALLOW_NET=1 yams --reindex
+        YAMS_ALLOW_NET=1 yams --index
       All later operation is offline. A stalled download is safely
       interrupted with Ctrl-C and rerun.
 
