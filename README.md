@@ -1,33 +1,28 @@
-# Ponchopig Yams
+# PonchoPig Yams
 
-Private Homebrew tap for [Yams](https://github.com/PonchoPig/yams).
+Homebrew tap for [Yams](https://github.com/PonchoPig/yams), offline
+semantic memory search for coding-agent corpora.
 
-## How do I install these formulae?
+## Install
 
-The tap repository is private. Add it with an authenticated clone URL (SSH
-is enough if `git clone git@github.com:PonchoPig/homebrew-yams.git` already
-works):
+Requires macOS 14 (Sonoma) or newer on Apple Silicon.
 
 ```sh
-brew tap ponchopig/yams git@github.com:PonchoPig/homebrew-yams.git
-brew install yams
+brew install ponchopig/yams/yams
 ```
 
-Or, in a `brew bundle` `Brewfile`:
+Optional warm-query service:
 
-```ruby
-tap "ponchopig/yams", "git@github.com:PonchoPig/homebrew-yams.git"
-brew "ponchopig/yams/yams"
+```sh
+brew services start yams
 ```
-
-`brew tap ponchopig/yams` without a clone URL only works once GitHub
-credentials can fetch `https://github.com/PonchoPig/homebrew-yams`.
-
-The formula currently installs from the local gate-built tarball at
-`~/dev/yams/dist/yams-0.1.0-aarch64-apple-darwin.tar.gz`. After the first
-GitHub release exists, replace that `file://` URL with the published
-tarball URL and its sha256.
 
 ## Documentation
 
-`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
+Usage, release provenance, and the publication process live in the
+[Yams repository](https://github.com/PonchoPig/yams).
+
+## License
+
+The formulae in this tap are licensed under either the MIT License or
+the Apache License 2.0, at your option, matching Yams itself.
