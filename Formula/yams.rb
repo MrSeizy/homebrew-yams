@@ -1,8 +1,8 @@
 class Yams < Formula
   desc "Offline semantic memory search for coding-agent corpora"
-  homepage "https://github.com/PonchoPig/yams"
-  url "https://github.com/PonchoPig/yams/releases/download/v0.1.0/yams-0.1.0-aarch64-apple-darwin.tar.gz"
-  sha256 "6c6848edefc99f520b37baeed5961873769b46f61d8ba6d4b20afd664917e2aa"
+  homepage "https://github.com/MrSeizy/yams"
+  url "https://github.com/MrSeizy/yams/releases/download/v0.2.0/yams-0.2.0-aarch64-apple-darwin.tar.gz"
+  sha256 "4b09223b63409e6052227800a51d3e3a28eda10047bb95faaf80988f2afdc268"
   license any_of: ["Apache-2.0", "MIT"]
 
   depends_on arch: :arm64
@@ -10,10 +10,6 @@ class Yams < Formula
 
   def install
     bin.install "yams", "memory-search", "yams-service", "yams-wiki"
-  end
-
-  def post_install
-    (Pathname.new(Dir.home)/"Library/Logs/yams").mkpath
   end
 
   service do
