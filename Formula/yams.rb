@@ -1,8 +1,8 @@
 class Yams < Formula
   desc "Offline semantic memory search for coding-agent corpora"
   homepage "https://github.com/MrSeizy/yams"
-  url "https://github.com/MrSeizy/yams/releases/download/v0.2.1/yams-0.2.1-aarch64-apple-darwin.tar.gz"
-  sha256 "ae8a87958807a343f5b75fb8d10557e88a3e0ced9b9a4d4378773b006c35c455"
+  url "https://github.com/MrSeizy/yams/releases/download/v0.3.0/yams-0.3.0-aarch64-apple-darwin.tar.gz"
+  sha256 "8205cf85883a6359edae1bc794678419b3f676a28bbfcc2bd323128d6f73d0ef"
   license any_of: ["Apache-2.0", "MIT"]
 
   depends_on arch: :arm64
