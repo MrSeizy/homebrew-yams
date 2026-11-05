@@ -20,10 +20,12 @@ jobs:
           persist-credentials: false
       - name: Install checkout as the tap
         run: |
-          dest="$(brew --repository)/Library/Taps/ponchopig/homebrew-yams"
+          dest="$(brew --repository)/Library/Taps/mrseizy/homebrew-yams"
           mkdir -p "$(dirname "$dest")"
           cp -R "$GITHUB_WORKSPACE" "$dest"
+      - name: Trust the checked-out formula
+        run: brew trust --formula mrseizy/yams/yams
       - name: Style
-        run: brew style ponchopig/yams
+        run: brew style mrseizy/yams
       - name: Audit
-        run: brew audit --strict --tap ponchopig/yams
+        run: brew audit --strict --tap mrseizy/yams
